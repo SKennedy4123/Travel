@@ -54,38 +54,40 @@ header a {
     background: white;
 }
 
+.img-responsive {
+    max-width: 100%;
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 64px;
 }
 
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
+}
+
+main {
+    background-color: white;
 }
 
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/glassStair.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        text-align: center;
-        padding: 200px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 10px;
     }
-
-    footer {
-  color: white;
-  background-image: linear-gradient(
-      rgba(4, 31, 4, 0.7),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url("../images/glassStair.jpg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 100px 0;
-}
 
 footer h3 {
   font-weight: 700;
@@ -130,5 +132,14 @@ footer a {
 
     header h3 {
         font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
     }
 }
